@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We Are Elites</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">WE ARE ELITES</h1>
+        <button id="theme-toggle">
+            <span class="sun">☀️</span>
+            <span class="moon">🌙</span>
+        </button>
+    </header>
+
+    <!-- About Section -->
+    <section class="about">
+        <h2>Who Are The Elites?</h2>
+        <p>The Elites are a group of visionary thinkers, leaders, and innovators who shape the world through groundbreaking ideas and influence. This group was created to bring together individuals who challenge the status quo, build legendary businesses, and leave a lasting impact on humanity.</p>
+        <p>Our mission is to **inspire, innovate, and transform** industries, economies, and the future. From space exploration to revolutionary technology, the Elites redefine what is possible.</p>
+    </section>
+
+    <!-- Members Section -->
+    <section class="members">
+        <h2>Elite Members</h2>
+        <div class="member-list">
+            <div class="member" onclick="showContribution('elon')">
+                <img src="WeAreElites/elon-musk.jpg" alt="Elon Musk">
+                <h3>Elon Musk</h3>
+                <p class="quote">"When something is important enough, you do it even if the odds are not in your favor."</p>
+            </div>
+
+            <div class="member" onclick="showContribution('jeff')">
+                <img src="WeAreElites/jeff-bezos.jpg" alt="Jeff Bezos">
+                <h3>Jeff Bezos</h3>
+                <p class="quote">"Work hard, have fun, make history."</p>
+            </div>
+
+            <div class="member" onclick="showContribution('bill')">
+                <img src="WeAreElites/bill-gates.jpg" alt="Bill Gates">
+                <h3>Bill Gates</h3>
+                <p class="quote">"Your most unhappy customers are your greatest source of learning."</p>
+            </div>
+
+            <div class="member" onclick="showContribution('warren')">
+                <img src="WeAreElites/warren-buffet.jpg" alt="Warren Buffett">
+                <h3>Warren Buffett</h3>
+                <p class="quote">"The more you learn, the more you earn."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Business Ideas Section -->
+    <section class="ideas">
+        <h2>Share Your Business Idea</h2>
+        <textarea id="idea-input" placeholder="Write your idea here..."></textarea>
+        <button id="submit-idea">Enter</button>
+    </section>
+
+    <!-- Popup Modal -->
+    <div id="contribution-popup" class="popup">
+        <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2 id="popup-title"></h2>
+            <p id="popup-text"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
